@@ -1,0 +1,112 @@
+
+.contacts{
+    padding:20px 20px 20px 20px;
+}
+
+.contacts_city{
+    padding: 10px 10px 10px 10px;
+    display:block;
+    background-color: #a2ebea;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px #00c2cb, 0px 5px 20px #fff;
+  transition: all ease 0.5s;
+    
+}
+
+.contacts_title{
+    text-align: center;
+    font-family: "Fasthand";
+    font-style: normal;
+    font-weight: 400;
+    font-size:20px;
+}
+.contacts_city:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px #fff;
+}
+@media screen and (min-width: 320px){
+    .contacts{
+        padding:20px 20px 20px 20px;
+    }
+    .contacts_item{
+        display:block;
+        margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    }
+    .contacts_city{
+        width: 100wv;
+        margin-bottom: 30px;
+    }
+    .about_info{
+        text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size:20px;
+    }
+    .contacts_title{
+        align-items: center;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .contacts_text{
+        text-align: center;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+    font-size:20px;
+    color: #fff;
+    text-shadow: 4px 4px 4px rgba(36, 35, 35, 0.9);
+    }
+    .london{
+        background-image: url('../img/big_ben.jpeg');
+        background-size: cover;
+    }
+    .paris{
+        background-image: url('../img/eifeleva_b.webp');
+        background-size: cover;
+    }
+    .rome{
+        background-image: url('../img/kolizei.jpeg');
+        background-size: cover;
+    }
+    .kiev{
+        background-image: url('../img/sofia.jpeg');
+        background-size: cover;
+    }
+@media screen and (min-width: 768px){
+    .contacts_item{
+        display:flex;
+        gap: 20px;
+        width: 768px;
+    }
+    .contacts_city{
+        width: 230px;
+    }
+    .contacts{
+        display: flex;
+        flex-wrap:wrap;
+        gap: 10px;
+        width: 768px;
+        padding-left: 30px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1200px){
+    // .contacts_item{
+    //     width: 1200px;
+    // }
+    // .contacts_city{
+    //     width: 230px;
+    // }
+    // .contacts{width: 1200px;}
+    //     display: flex;
+    //     flex-wrap:wrap;
+    //     gap: 10px;
+    //     width: 1200px;
+    //     padding-left: 30px;
+    //     margin: auto;
+    // }
+}

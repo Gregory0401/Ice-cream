@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "izimodal": "^1.6.1",
+    "scrollmagic": "^2.0.8",
+    "wow.js": "^1.2.2"
+  }
+}

@@ -1,0 +1,116 @@
+.products_title{
+    opacity: 0;
+}
+.products{
+    margin: 0;
+    padding: 0;
+    
+}
+.products_label{
+    margin-top:0;
+    margin-bottom: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: #5f5243;
+    font-family: "Fasthand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    text-shadow: 4px 4px 4px #6f6457;
+    background: linear-gradient( antiquewhite, rgb(240, 207, 164) );
+}
+.products_header{
+    text-align: center;
+    color: #5f5243;
+    font-family: "Fasthand";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.2;
+    text-shadow: 4px 4px 4px #6f6457;
+    text-transform:uppercase;
+    padding-bottom: 40px;
+}
+.products_text{
+    margin-bottom: 20px;
+}
+.products_card{
+    height: 450px;
+    background: linear-gradient( antiquewhite, rgb(240, 207, 164) );
+    font-family: "Fasthand";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #5f5243;
+    text-align: center;
+}
+.desert{  
+    height: 450px;
+    background-image: url('../img/icedesert2.jpeg');
+    background-size:cover;
+}
+.special{
+    background-image: url('../img/special.jpeg');
+    background-size:contain, scale 1.2;
+}
+.background{
+    background: linear-gradient(#a2ebea, #d4ebee);
+    color: #3e3ee6;
+}
+.branded{
+    background-image: url('../img/brnded\ 2.jpeg');
+    background-size: cover;
+}
+.gradient{
+    background: linear-gradient(rgb(240, 207, 164),  antiquewhite  );
+}
+@media screen and (min-width: 320px){
+    .products{
+        width: 100wv;
+        background: linear-gradient(rgb(240, 207, 164),  antiquewhite  );
+    }
+    .product_button{
+        background-image: none; 
+      background: transparent;
+      background-color: transparent;
+        border-radius: 50%;
+        width: 150px;
+        height: 50px;
+        font-size:20px;
+        margin-top: 30px;
+        margin-left: auto;
+    margin-right: auto;
+   }
+   .specialbtn{
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+      border: 2px solid #3e3ee6;
+      color:#3e3ee6;      
+}
+.products_card{
+    padding-bottom: 30px;
+    height: 450px;
+    padding: 80px 20px 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.products_item{   
+    display: block; 
+    
+}
+}
+@media screen and (min-width: 768px){
+    .products_item{
+        display: flex;
+    }
+    .products_card{
+        width: 50vw;
+        height: 450px;
+        padding: 100px 20px 0 20px;
+    }
+}
