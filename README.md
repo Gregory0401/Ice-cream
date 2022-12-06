@@ -16,4 +16,6 @@
 <p align="left">The application is fully responsive for mobile devices</p>
 <img src="./readme/adaptive.png" width=240 height=400>
 
+<h2 align="left">The following technologies were used in the development of this application: HTML/SASS/JavaScript</h2>
+
 
