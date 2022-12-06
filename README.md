@@ -13,9 +13,6 @@
 <p align="left">In the "Footer" section, anchor links and links to this promotion in social networks are also implemented</p>
 <img src="./readme/footer.png" width=300 height=200>
 <p></p>
-<p align="left">In the "Footer" section, anchor links and links to this promotion in social networks are also implemented</p>
-
-<img src="./readme/footer.png" width=300 height=200>
 <p align="left">The application is fully responsive for mobile devices</p>
 <img src="./readme/adaptive.png" width=240 height=400>
 
