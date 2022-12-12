@@ -1,3 +1,5 @@
+<p align="left">Individual project</p>
+
 <h1 align="center">Ice cream app</h1>
 <p align="left">Thanks to this application, you can choose and buy your favorite ice cream.</p>
 <img src="./readme/home.png">
