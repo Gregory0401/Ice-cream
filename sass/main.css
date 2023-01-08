@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -227,7 +228,6 @@ a {
   .hero_img_7 {
     display: block;
     position: absolute;
-    scale: 0.8;
     top: 240px;
     left: -167px;
     background-color: rgba(0, 0, 0, 0);
@@ -388,7 +388,8 @@ a {
 }
 
 .products_text {
-  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .products_card {
@@ -414,9 +415,29 @@ a {
   background-size: contain, scale 1.2;
 }
 
+.vegan {
+  background-image: url("../img/мороженка_жел.jpeg");
+  background-size: cover;
+}
+
+.lactose {
+  background-image: url("../img/мороженка_зел.jpeg");
+  background-size: cover;
+}
+
 .background {
   background: linear-gradient(#a2ebea, #d4ebee);
   color: #3e3ee6;
+}
+
+.background_2 {
+  background: linear-gradient(#e9bc1a, #f2e766);
+  color: #ea3737;
+}
+
+.background_3 {
+  background: linear-gradient(#65e68a, #a7dba3);
+  color: #ebe002;
 }
 
 .branded {
@@ -428,7 +449,15 @@ a {
   background: linear-gradient(rgb(240, 207, 164), antiquewhite);
 }
 
+.product_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px #fff;
+}
+
 @media screen and (min-width: 320px) {
+  .products_card {
+    border-radius: 30px 30px 0 0;
+  }
   .products {
     width: 100wv;
     background: linear-gradient(rgb(240, 207, 164), antiquewhite);
@@ -442,7 +471,7 @@ a {
     height: 50px;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: auto;
+    margin-left: 150px;
     margin-right: auto;
   }
   .specialbtn {
@@ -454,25 +483,110 @@ a {
     border: 2px solid #3e3ee6;
     color: #3e3ee6;
   }
-  .products_card {
-    padding-bottom: 30px;
-    height: 450px;
-    padding: 80px 20px 0 20px;
+  .vegan_btn {
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #ea3737;
+    color: #ea3737;
+  }
+  .lactose_btn {
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #ebe002;
+    color: #ebe002;
+  }
+  .product_item {
+    display: block;
+    padding: 10px 10px 50px 10px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
-  .products_item {
-    display: block;
+  .product_card {
+    width: 310px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px #444545, 0px 5px 20px rgb(233, 190, 121);
+    transition: all ease 0.5s;
+    margin-bottom: 40px;
+  }
+  .product_button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
-  .products_item {
+@media screen and (min-width: 800px) {
+  .product_item {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 50px 10px;
   }
-  .products_card {
-    width: 50vw;
-    height: 450px;
-    padding: 100px 20px 0 20px;
+  .product_card {
+    width: 350px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px #444545, 0px 5px 20px rgb(233, 190, 121);
+    transition: all ease 0.5s;
+  }
+  .product_button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 50px 20px;
+  }
+  .product_card {
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px #444545, 0px 5px 20px rgb(233, 190, 121);
+    transition: all ease 0.5s;
+  }
+  .product_button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: auto;
   }
 }
 .about_us {
@@ -612,6 +726,19 @@ a {
     width: 768px;
     padding-left: 30px;
     margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts_city {
+    width: 230px;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .footer_container {

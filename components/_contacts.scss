@@ -9,7 +9,7 @@
     background-color: #a2ebea;
     border-radius: 10px;
     box-shadow: 0px 5px 20px #00c2cb, 0px 5px 20px #fff;
-  transition: all ease 0.5s;
+    transition: all ease 0.5s;
     
 }
 
@@ -95,18 +95,20 @@
     }
 }
 @media screen and (min-width: 1200px){
-    // .contacts_item{
-    //     width: 1200px;
-    // }
-    // .contacts_city{
-    //     width: 230px;
-    // }
-    // .contacts{width: 1200px;}
-    //     display: flex;
-    //     flex-wrap:wrap;
-    //     gap: 10px;
-    //     width: 1200px;
-    //     padding-left: 30px;
-    //     margin: auto;
-    // }
-}
+    .contacts_item{
+        // width: 1200px;
+        
+    }
+    .contacts_city{
+        width: 230px;
+    }
+    .contacts{
+        display: flex;
+        flex-wrap:wrap;
+        gap: 10px;
+        width: 1000px;
+        margin-left: auto;
+    margin-right: auto;
+    }
+        
+    }

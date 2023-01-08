@@ -1,116 +1,224 @@
-.products_title{
-    opacity: 0;
+.products_title {
+  opacity: 0;
 }
-.products{
-    margin: 0;
-    padding: 0;
-    
+.products {
+  margin: 0;
+  padding: 0;
 }
-.products_label{
-    margin-top:0;
-    margin-bottom: 0;
-    padding-top: 50px;
-    text-align: center;
-    color: #5f5243;
-    font-family: "Fasthand";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.2;
-    text-shadow: 4px 4px 4px #6f6457;
-    background: linear-gradient( antiquewhite, rgb(240, 207, 164) );
+.products_label {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  text-align: center;
+  color: #5f5243;
+  font-family: "Fasthand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  text-shadow: 4px 4px 4px #6f6457;
+  background: linear-gradient(antiquewhite, rgb(240, 207, 164));
 }
-.products_header{
-    text-align: center;
-    color: #5f5243;
-    font-family: "Fasthand";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 1.2;
-    text-shadow: 4px 4px 4px #6f6457;
-    text-transform:uppercase;
-    padding-bottom: 40px;
+.products_header {
+  text-align: center;
+  color: #5f5243;
+  font-family: "Fasthand";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 1.2;
+  text-shadow: 4px 4px 4px #6f6457;
+  text-transform: uppercase;
+  padding-bottom: 40px;
 }
-.products_text{
-    margin-bottom: 20px;
+.products_text {
+  margin-top: 20px;
+  text-align: center;
 }
-.products_card{
-    height: 450px;
-    background: linear-gradient( antiquewhite, rgb(240, 207, 164) );
-    font-family: "Fasthand";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 1.2;
-    color: #5f5243;
-    text-align: center;
+.products_card {
+  height: 450px;
+  background: linear-gradient(antiquewhite, rgb(240, 207, 164));
+  font-family: "Fasthand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #5f5243;
+  text-align: center;
 }
-.desert{  
-    height: 450px;
-    background-image: url('../img/icedesert2.jpeg');
-    background-size:cover;
+.desert {
+  height: 450px;
+  background-image: url("../img/icedesert2.jpeg");
+  background-size: cover;
 }
-.special{
-    background-image: url('../img/special.jpeg');
-    background-size:contain, scale 1.2;
+.special {
+  background-image: url("../img/special.jpeg");
+  background-size: contain, scale 1.2;
 }
-.background{
-    background: linear-gradient(#a2ebea, #d4ebee);
-    color: #3e3ee6;
+.vegan {
+  background-image: url("../img/мороженка_жел.jpeg");
+  background-size: cover;
 }
-.branded{
-    background-image: url('../img/brnded\ 2.jpeg');
-    background-size: cover;
+.lactose {
+  background-image: url("../img/мороженка_зел.jpeg");
+  background-size: cover;
 }
-.gradient{
-    background: linear-gradient(rgb(240, 207, 164),  antiquewhite  );
+.background {
+  background: linear-gradient(#a2ebea, #d4ebee);
+  color: #3e3ee6;
 }
-@media screen and (min-width: 320px){
-    .products{
-        width: 100wv;
-        background: linear-gradient(rgb(240, 207, 164),  antiquewhite  );
-    }
-    .product_button{
-        background-image: none; 
-      background: transparent;
-      background-color: transparent;
-        border-radius: 50%;
-        width: 150px;
-        height: 50px;
-        font-size:20px;
-        margin-top: 30px;
-        margin-left: auto;
-    margin-right: auto;
-   }
-   .specialbtn{
+.background_2 {
+  background: linear-gradient(#e9bc1a, #f2e766);
+  color: #ea3737;
+}
+.background_3 {
+  background: linear-gradient(#65e68a, #a7dba3);
+  color: #ebe002;
+}
+.branded {
+  background-image: url("../img/brnded\ 2.jpeg");
+  background-size: cover;
+}
+.gradient {
+  background: linear-gradient(rgb(240, 207, 164), antiquewhite);
+}
+.product_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px #fff;
+}
+@media screen and (min-width: 320px) {
+  .products_card {
+    border-radius: 30px 30px 0 0;
+  }
+  .products {
+    width: 100wv;
+    background: linear-gradient(rgb(240, 207, 164), antiquewhite);
+  }
+  .product_button {
+    background-image: none;
     background: transparent;
     background-color: transparent;
     border-radius: 50%;
     width: 150px;
     height: 50px;
-      border: 2px solid #3e3ee6;
-      color:#3e3ee6;      
-}
-.products_card{
-    padding-bottom: 30px;
-    height: 450px;
-    padding: 80px 20px 0 20px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: auto;
+  }
+  .specialbtn {
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #3e3ee6;
+    color: #3e3ee6;
+  }
+  .vegan_btn {
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #ea3737;
+    color: #ea3737;
+  }
+  .lactose_btn {
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #ebe002;
+    color: #ebe002;
+  }
+
+  .product_item {
+    display: block;
+    padding: 10px 10px 50px 10px;
+    width: 320px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .product_card {
+    width: 310px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px #444545, 0px 5px 20px rgb(233, 190, 121);
+    transition: all ease 0.5s;
+    margin-bottom: 40px;
+  }
+  .product_button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: auto;
+  }
 }
-.products_item{   
-    display: block; 
-    
+@media screen and (min-width: 800px) {
+  .product_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 10px 50px 10px;
+  }
+  .product_card {
+    width: 350px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px #444545, 0px 5px 20px rgb(233, 190, 121);
+    transition: all ease 0.5s;
+  }
+  .product_button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
 }
-}
-@media screen and (min-width: 768px){
-    .products_item{
-        display: flex;
-    }
-    .products_card{
-        width: 50vw;
-        height: 450px;
-        padding: 100px 20px 0 20px;
-    }
+@media screen and (min-width: 1200px) {
+  .product_item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px 50px 20px;
+  }
+  .product_card {
+    width: 450px;
+    height: 600px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px #444545, 0px 5px 20px rgb(233, 190, 121);
+    transition: all ease 0.5s;
+  }
+  .product_button {
+    background-image: none;
+    background: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right: auto;
+  }
 }
