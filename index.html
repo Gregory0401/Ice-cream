@@ -54,43 +54,21 @@
         </div>        
         
         </section>
-        <section class="products">
+        <section class="products" id="products">
           <p class="products_label">100% natural</p>
           <h2 class="products_header">Products</h2>
-          <ul id="products" class="product_item">
+           <ul class="product_item">
             <li class="product_card">
-              <div class="products_card desert"></div>
-              <h2 class="products_text">The fine desserts</h2>
-              <button type="button" data-modal-open-second class="product_button">More</button>
-              <!-- <button type="button" data-modal-open class="product_button">Buy now</button> -->
+             <a href="#fine" class="link "><h2 class="products_text fine">The fine desserts</h2></a>
             </li>
-            <li class="product_card background">
-              <div class="products_card special"></div>
-              <h2 class="products_text">Special ice cream</h2>
-              <button type="button" data-modal-open-brand class="product_button specialbtn">More</button>
-              <!-- <button type="button" data-modal-open class="btn_buy">Buy now</button> -->
+            <li class="product_card">
+              <a href="#special" class="link"><h2 class="products_text special">Special ice cream</h2></a>
             </li>
-            <li class="product_card background_2">
-              <div class="products_card vegan"></div>
-              <h2 class="products_text">For vegans</h2>
-              <button type="button" data-modal-open-brand class="product_button vegan_btn">More</button>
-              <!-- <button type="button" data-modal-open class="btn_buy">Buy now</button> -->
-            </li>
-            <li class="product_card background_3">
-              <div class="products_card lactose"></div>
-              <h2 class="products_text">Lactose free</h2>
-              <button type="button" data-modal-open-brand class="product_button lactose_btn">More</button>
-              <!-- <button type="button" data-modal-open class="btn_buy">Buy now</button> -->
-            </li>
-          </ul>
-                <!-- <ul id="products" class="products_item" >
-                <li class="products_card"><h2 class="products_text" >The fine desserts</h2><button type="button" data-modal-open-second class="product_button" >More</button></li>
-                <li class="products_card desert" ></li>
-                </ul>
-                <ul class="products_item ">
-                <li class="products_card background"><h2 class="products_text">Special ice cream</h2><button type="button" data-modal-open-brand class="product_button specialbtn">More</button></li>
-                <li class="products_card special"></li>
-                </ul> -->
+            <li class="product_card">
+              <a href="#vegans" class="link"><h2 class="products_text vegan">For vegans</h2></a>
+            </li>          
+          </ul> 
+          <div id="app"></div>           
              
         </section>
         <section id="about" class="about_us" >
@@ -233,7 +211,7 @@
 
     <button
       class="buy_now"
-      data-modal-open-header
+      data-modal-submit
       type="submit"
     >
       Buy now
@@ -243,35 +221,11 @@
 </div>
   </form>
 
-<!-- ======modal our products======= -->
 
-  <div class="backdrop_desert hidden" data-modal-second>
-    <div class="modal_products">
-      <ul class="modal_card">
-        <li><div class="modal_desert img1"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_desert img2"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_desert img3"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_desert img4"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_desert img5"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_desert img6"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-      </ul>
-      <button type="button" data-modal-close-second class="btn_close">X</button>
-    </div>
-  </div>
-
- <div class="backdrop_desert hid" data-modal-brand>
-    <div class="modal_special">
-      <ul class="modal_special_ice">
-        <li><div class="modal_spec img7"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_spec img8"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_spec img9"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_spec img10"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_spec img11"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-        <li><div class="modal_spec img12"></div><p class="modal_ice">Lorem ipsum dolor sit amet</p></li>
-      </ul>
-      <button type="button" data-modal-close-brand class="btn_close">X</button>
-    </div>
- 
+    <script src="js/route.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/fetch.js"></script>
   <script type="module" src="./js/modal.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
