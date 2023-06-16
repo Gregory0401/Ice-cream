@@ -28,7 +28,7 @@
           <li ><a href="#contacts" class="header_item">Contacts</a></li>
         </ul>
       </navigation>
-      <button type="button" data-modal-open class="btn_buy">Buy now</button>
+      <button type="button" data-modal-open class="btn_buy">Cart</button>
     </header>
       <main>
         <section class="hero">
@@ -195,6 +195,9 @@
       </div>
     </div>
   </div>
+    
+    <ul class="cart_total" id="cart_total"></ul>
+    <div class="cart_label"></div>
     <div>
       <label for="user-text" class="modal_label"
         >Leave Your Comment Below</label
@@ -208,7 +211,6 @@
         rows="9"
       ></textarea>
     </div>
-
     <button
       class="buy_now"
       data-modal-submit
@@ -226,6 +228,7 @@
     <script src="js/router.js"></script>
     <script src="js/app.js"></script>
     <script src="js/fetch.js"></script>
+    <script src="js/cart.js"></script>
   <script type="module" src="./js/modal.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
