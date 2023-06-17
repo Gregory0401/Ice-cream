@@ -23,6 +23,7 @@ shoppingCart.innerHTML = cart.map((x)=>{
               <button onclick="increment(${x.id})" class="btn_total">+</button>
             </div>
           </div>
+          <button onclick="remove(${x.id})" class="btn_remove">Delete</button>
     </li>
     `
 })
@@ -30,19 +31,22 @@ shoppingCart.innerHTML = cart.map((x)=>{
 totalAmount()
   };
   
-  let increment = (id) => {
-    let selectedItem = id;
-    let search = basket.find((x) => x.id === selectedItem);   
+  function increment(id){
+    const selectedItem = id;
+    const search = basket.find((x) => x.id === selectedItem);   
     search.item += 1;   
     localStorage.setItem("data", JSON.stringify(basket));
     generateCartItems ();
     totalAmount();
   };
 
-  let decrement = (id) => {
-    let selectedItem = id;
-    let search = basket.find((x) => x.id === selectedItem);   
-    search.item -= 1;   
+  function decrement (id){
+    const selectedItem = id;
+    const search = basket.find((x) => x.id === selectedItem);   
+    if (search.item === 0) return;
+    else{
+        search.item -= 1;   
+    }
     localStorage.setItem("data", JSON.stringify(basket));
     generateCartItems ();
     totalAmount()
@@ -50,7 +54,7 @@ totalAmount()
 
 
   function totalAmount(){
-  let cart = JSON.parse(localStorage.getItem("data")) || [];
+  const cart = JSON.parse(localStorage.getItem("data")) || [];
   const label = document.querySelector(".cart_label")
   const amount = cart.map((x)=>{
         return  x.item*x.price;
@@ -69,4 +73,12 @@ totalAmount()
   function clearCart(){
   localStorage.removeItem("data")
   generateCartItems ();
+  }
+
+  function remove(id){
+    const selectedItem = id;
+    basket = basket.filter((x) => x.id !== selectedItem);
+    localStorage.setItem("data", JSON.stringify(basket));
+    generateCartItems();
+    totalAmount();
   }
