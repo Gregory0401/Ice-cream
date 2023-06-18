@@ -78,14 +78,11 @@ return `
 <button onclick="pushCart(${id},${price},'${name}')" class="btn_add">Add to cart</button>
 </li>
 `
-      }
-      
-    )
-      .join("");
+ })
+  .join("");
     
     list.insertAdjacentHTML("beforeend", markup);      
-        })
-        
+        })     
         .catch(error =>{
             alert('errorrr')
         })
@@ -145,9 +142,8 @@ return `
       item: 1,
     });
   } else {
-    search.item += 1;
+    search.item + 1;
   }
-  console.log(basket);
 
   localStorage.setItem("data", JSON.stringify(basket));
   };

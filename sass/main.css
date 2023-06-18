@@ -775,8 +775,8 @@ a {
   background-color: transparent;
   width: 25px;
   height: 25px;
-  border-radius: 50%;
-  font-size: 16px;
+  border: none;
+  font-size: 20px;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -784,7 +784,6 @@ a {
 
 .btn_total:hover {
   color: #ffffff;
-  border: solid #ffffff;
 }
 
 .cart_buttons {
