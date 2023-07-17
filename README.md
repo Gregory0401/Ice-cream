@@ -1,4 +1,6 @@
 <p align="left">Individual project</p>
+<p align="left">Implemented routing, opening a modal window, a shopping cart and a request to the server on vanilla JS.</p>
+
 
 <h1 align="center">Ice cream app</h1>
 <p align="left">Thanks to this application, you can choose and buy your favorite ice cream.</p>
