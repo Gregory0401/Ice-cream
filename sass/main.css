@@ -376,6 +376,15 @@ a {
   color: #f4f7f7;
 }
 
+.btn_lm {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #efe0cf;
+  border: none;
+  cursor: pointer;
+}
+
 .btn_add {
   width: 100px;
   height: 30px;
