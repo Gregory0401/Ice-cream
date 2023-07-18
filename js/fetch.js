@@ -5,15 +5,15 @@ const refs = {
 };
 
 refs.openSpecial.addEventListener("click", () => {
-  loadMore2();
+  // loadMore2();
   special();
 });
 refs.openVegan.addEventListener("click", () => {
-  loadMore3();
+  // loadMore3();
   vegan();
 });
 refs.openFine.addEventListener("click", () => {
-  loadMore();
+  // loadMore();
   fine();
 });
 
