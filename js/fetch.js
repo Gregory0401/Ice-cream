@@ -25,7 +25,7 @@ const totalPages = 6 / limit;
 
 function loadMore() {
   const loadMore = document.querySelector(".loadMore");
-  loadMore.innerHTML = `<button onclick="fine()" class="btn_lm">load more</button>`;
+  loadMore.innerHTML = `<button onclick="fine()" class="btn_lm">Load more</button>`;
   // const isResizeble = false;
   // if (!isResizeble) {
   //   isRezible = true;
@@ -33,11 +33,11 @@ function loadMore() {
 }
 function loadMore2() {
   const loadMore = document.querySelector(".loadMore");
-  loadMore.innerHTML = `<button onclick="special()" class="btn_lm">load more</button>`;
+  loadMore.innerHTML = `<button onclick="special()" class="btn_lm">Load more</button>`;
 }
 function loadMore3() {
   const loadMore = document.querySelector(".loadMore");
-  loadMore.innerHTML = `<button onclick="vegan()" class="btn_lm">load more</button>`;
+  loadMore.innerHTML = `<button onclick="vegan()" class="btn_lm">Load more</button>`;
 }
 
 function fine() {
