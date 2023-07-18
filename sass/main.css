@@ -447,6 +447,7 @@ a {
   text-align: center;
   font-family: "Fasthand";
   margin-bottom: 40px;
+  text-shadow: 5px 5px 20px #444545, 5px 5px 20px rgb(233, 190, 121);
 }
 
 .about_info {
@@ -457,6 +458,7 @@ a {
   line-height: 1.2;
   font-family: Titan One, cursive;
   margin-bottom: 40px;
+  text-shadow: 2px 2px 12px #444545, 1px 1px 12px rgba(233, 190, 121, 0.7);
 }
 
 .contacts {
