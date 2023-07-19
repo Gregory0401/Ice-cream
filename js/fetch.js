@@ -26,10 +26,6 @@ const totalPages = 6 / limit;
 function loadMore() {
   const loadMore = document.querySelector(".loadMore");
   loadMore.innerHTML = `<button onclick="fine()" class="btn_lm">Load more</button>`;
-  // const isResizeble = false;
-  // if (!isResizeble) {
-  //   isRezible = true;
-  // }
 }
 function loadMore2() {
   const loadMore = document.querySelector(".loadMore");
@@ -45,7 +41,8 @@ function fine() {
     .then((shop) => {
       fetchModels2(shop);
       // page += 1;
-      // if (page >= totalPages) {
+      // if (page > totalPages + 1) {
+      //   alert("всё, мороженка кончилась");
       // }
     })
     .catch((error) => console.log(error));
