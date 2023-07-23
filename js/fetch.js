@@ -23,27 +23,39 @@ let page = 1;
 let limit = 3;
 const totalPages = 6 / limit;
 
+let page2 = 1;
+let limit2 = 3;
+
 function loadMore() {
   const loadMore = document.querySelector(".loadMore");
-  loadMore.innerHTML = `<button onclick="fine()" class="btn_lm">Load more</button>`;
+  loadMore.innerHTML = `<button onclick="fineLoadMore()" class="btn_lm">Load more</button>`;
 }
 function loadMore2() {
   const loadMore = document.querySelector(".loadMore");
-  loadMore.innerHTML = `<button onclick="special()" class="btn_lm">Load more</button>`;
+  loadMore.innerHTML = `<button onclick="specialLoadMore()" class="btn_lm">Load more</button>`;
 }
 function loadMore3() {
   const loadMore = document.querySelector(".loadMore");
-  loadMore.innerHTML = `<button onclick="vegan()" class="btn_lm">Load more</button>`;
+  loadMore.innerHTML = `<button onclick="veganLoadMore()" class="btn_lm">Load more</button>`;
+}
+
+function fineLoadMore() {
+  fetchModels()
+    .then((shop) => {
+      fetchModels2(shop);
+      page += 1;
+      if (page > totalPages + 1) {
+        alert("всё, мороженка кончилась");
+        // page = 1;
+      }
+    })
+    .catch((error) => console.log(error));
 }
 
 function fine() {
   fetchModels()
     .then((shop) => {
       fetchModels2(shop);
-      // page += 1;
-      // if (page > totalPages + 1) {
-      //   alert("всё, мороженка кончилась");
-      // }
     })
     .catch((error) => console.log(error));
 }
@@ -52,6 +64,7 @@ async function fetchModels() {
     _limit: limit,
     _page: page,
   });
+
   let res = await fetch(
     `https://my-json-server.typicode.com/Gregory0401/data/fine-desserts?${params}`
   );
@@ -82,21 +95,31 @@ function fetchModels2(shops) {
   list.insertAdjacentHTML("beforeend", markup);
 }
 
+function specialLoadMore() {
+  fetchSpecial()
+    .then((shop) => {
+      fetchSpecial2(shop);
+      page2 += 1;
+      if (page2 > totalPages + 1) {
+        // alert("всё, мороженка кончилась");
+        // page2 = 1;
+      }
+    })
+    .catch((error) => console.log(error));
+}
+
 function special() {
   fetchSpecial()
     .then((shop) => {
       fetchSpecial2(shop);
-      // page += 1;
-      // if (page > 1) {
-      // }
     })
     .catch((error) => console.log(error));
 }
 
 async function fetchSpecial() {
   const params = new URLSearchParams({
-    _limit: limit,
-    _page: page,
+    _limit: limit2,
+    _page: page2,
   });
   let res = await fetch(
     `https://my-json-server.typicode.com/Gregory0401/data/special?${params}`
@@ -127,13 +150,21 @@ function fetchSpecial2(shop) {
   list.insertAdjacentHTML("beforeend", markup);
 }
 
+function veganLoadMore() {
+  fetchVegan()
+    .then((shop) => {
+      fetchVegan2(shop);
+      page += 1;
+      if (page > 1) {
+      }
+    })
+    .catch((error) => console.log(error));
+}
+
 function vegan() {
   fetchVegan()
     .then((shop) => {
       fetchVegan2(shop);
-      // page += 1;
-      // if (page > 1) {
-      // }
     })
     .catch((error) => console.log(error));
 }
