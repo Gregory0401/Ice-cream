@@ -1,12 +1,10 @@
-@import "../components/index";
-@import "../components/header";
-@import "../components/hero";
-@import "../components/fetch-products";
-@import "../components/about";
-@import "../components/contacts";
-@import "../components/footer";
-@import "../components/buy-now";
-@import "../components/mixin";
-
-@import "../components/our_products";
-
+@import "../sass/components/index";
+@import "../sass/components/header";
+@import "../sass/components/hero";
+@import "../sass/components/fetch-products";
+@import "../sass/components/about";
+@import "../sass/components/contacts";
+@import "../sass/components/footer";
+@import "../sass/components/buy-now";
+@import "../sass/utility/mixin";
+@import "../sass/components/our_products";
