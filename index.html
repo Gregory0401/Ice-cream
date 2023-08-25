@@ -39,7 +39,6 @@
       
       <button type="button" data-modal-open class="btn_buy">Cart
       <span class="header_cart-number"></span>
-
       </button>
 
     </header>
@@ -69,6 +68,35 @@
         <section class="products" id="products">
           <p class="products_label">100% natural</p>
           <h2 class="products_header">Products</h2>
+          <h3 class="countdown-title">Deal of the week</h3>
+          <p class="countdown-name">Special Ice Cream</p>
+<div id="deadline-message" class="deadline-message">
+  Time is up!
+</div>
+<div id="countdown" class="countdown">
+  <div class="countdown-number">
+    <span class="days countdown-time"></span>
+    <span class="countdown-text">Days</span>
+  </div>
+  <div class="countdown-number">
+    <span class="hours countdown-time"></span>
+    <span class="countdown-text">Hours</span>
+  </div>
+  <div class="countdown-number">
+    <span class="minutes countdown-time"></span>
+    <span class="countdown-text">Minutes</span>
+  </div>
+  <div class="countdown-number">
+    <span class="seconds countdown-time"></span>
+    <span class="countdown-text">Seconds</span>
+  </div>
+</div>
+<!-- <button type="button" data-modal-open class="btn_buy-deal">Buy now</button> -->
+<div>
+          <img src="./img/deal.png" class="deal_img"/>
+
+</div>
+
            <ul class="product_item">
             <li class="product_card">
              <a href="#fine" class="link "><h2 id="fine" class="products_text fine">The fine desserts</h2></a>
@@ -233,6 +261,8 @@
     <script src="js/fetch.js"></script>
     <script src="js/cart.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/timer.js"></script>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
