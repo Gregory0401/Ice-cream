@@ -74,3 +74,40 @@ body {
 .deal_img {
   width: 500px;
 }
+.btn_container {
+  width: 155px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.btn_buy-deal {
+  background: transparent;
+  float: left;
+  background-color: transparent;
+  justify-content: flex-end;
+  border-radius: 22px;
+  border: 2px solid #5f5243;
+  cursor: pointer;
+  color: #5f5243;
+  font-family: "Fasthand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  border-radius: 50%;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  text-shadow: 4px 4px 4px #5f5243;
+}
+
+.btn_buy-deal:hover,
+:focus {
+  background-color: #5f5243;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.img_container {
+  width: 500px;
+  margin: 0 auto;
+}
