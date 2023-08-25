@@ -4,10 +4,12 @@
     closeModalBtn: document.querySelector("[data-modal-close]"),
     closeModalBtnSub: document.querySelector("[data-modal-submit]"),
     modal: document.querySelector("[data-modal]"),
+    btnBuyNow: document.querySelector("[data-buy-open]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.btnBuyNow.addEventListener("click", toggleModal);
   refs.closeModalBtnSub.addEventListener("click", cleanCart);
 
   function toggleModal() {
