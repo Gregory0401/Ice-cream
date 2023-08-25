@@ -20,11 +20,8 @@ refs.openFine.addEventListener("click", () => {
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 let page = 1;
-let limit = 3;
+let limit = 6;
 const totalPages = 6 / limit;
-
-let page2 = 1;
-let limit2 = 3;
 
 function loadMore() {
   const loadMore = document.querySelector(".loadMore");
@@ -44,10 +41,6 @@ function fineLoadMore() {
     .then((shop) => {
       fetchModels2(shop);
       page += 1;
-      if (page > totalPages + 1) {
-        alert("всё, мороженка кончилась");
-        // page = 1;
-      }
     })
     .catch((error) => console.log(error));
 }
@@ -99,11 +92,7 @@ function specialLoadMore() {
   fetchSpecial()
     .then((shop) => {
       fetchSpecial2(shop);
-      page2 += 1;
-      if (page2 > totalPages + 1) {
-        // alert("всё, мороженка кончилась");
-        // page2 = 1;
-      }
+      page += 1;
     })
     .catch((error) => console.log(error));
 }
@@ -118,8 +107,8 @@ function special() {
 
 async function fetchSpecial() {
   const params = new URLSearchParams({
-    _limit: limit2,
-    _page: page2,
+    _limit: limit,
+    _page: page,
   });
   let res = await fetch(
     `https://my-json-server.typicode.com/Gregory0401/data/special?${params}`
@@ -155,8 +144,6 @@ function veganLoadMore() {
     .then((shop) => {
       fetchVegan2(shop);
       page += 1;
-      if (page > 1) {
-      }
     })
     .catch((error) => console.log(error));
 }
@@ -219,6 +206,10 @@ let pushCart = (id, price, name) => {
   } else {
     search.item + 1;
   }
+
+  const numberItemsCart = document.querySelector(".header_cart-number");
+  const numberCart = (numberItemsCart.innerHTML = "!");
+  basket.length > 0 && numberCart;
 
   localStorage.setItem("data", JSON.stringify(basket));
 };

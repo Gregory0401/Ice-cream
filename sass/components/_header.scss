@@ -65,7 +65,17 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-@include mobile {
+.header_cart-number {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  font-weight: 600;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(234, 10, 10);
+}
+
+@media screen and (min-width: 480px) {
   .header {
     background-image: url("../img/headerMob.png");
     background-size: 800px;
@@ -78,13 +88,14 @@
     display: none;
   }
   .btn_buy {
+    position: relative;
     width: 159px;
     height: 44px;
     margin-bottom: 140px;
   }
 }
 
-@include tablet {
+@media screen and (min-width: 768px) {
   .header_logo {
     display: none;
   }
@@ -125,7 +136,7 @@
   }
 }
 
-@include desktop {
+@media screen and (min-width: 1280px) {
   .header_item {
     margin-right: 40px;
     font-size: 24px;

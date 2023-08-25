@@ -89,7 +89,7 @@
   border: solid #ffffff;
 }
 
-@include mobile {
+@media screen and (min-width: 480px) {
   .modal {
     width: 320px;
   }
@@ -148,7 +148,7 @@
   }
 }
 
-@include tablet {
+@media screen and (min-width: 768px) {
   .modal {
     width: 400px;
   }

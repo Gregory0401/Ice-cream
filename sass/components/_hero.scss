@@ -25,7 +25,7 @@
   font-size: 28px;
   margin: 0 auto;
 }
-@include mobile {
+@media screen and (min-width: 480px) {
   .hero_container {
     margin-top: 0;
   }
@@ -85,7 +85,7 @@
   }
 }
 
-@include tablet {
+@media screen and (min-width: 768px) {
   .hero_container {
     margin-top: auto;
   }
@@ -145,7 +145,7 @@
   }
 }
 
-@include desktop {
+@media screen and (min-width: 1280px) {
   .hero {
     height: 500px;
   }

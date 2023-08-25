@@ -89,7 +89,17 @@ a {
   background-size: contain;
 }
 
-@media screen and (min-width: 320px) {
+.header_cart-number {
+  position: absolute;
+  top: 5%;
+  right: 20%;
+  font-weight: 600;
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(234, 10, 10);
+}
+
+@media screen and (min-width: 480px) {
   .header {
     background-image: url("../img/headerMob.png");
     background-size: 800px;
@@ -102,6 +112,7 @@ a {
     display: none;
   }
   .btn_buy {
+    position: relative;
     width: 159px;
     height: 44px;
     margin-bottom: 140px;
@@ -147,7 +158,7 @@ a {
     margin-bottom: 230px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .header_item {
     margin-right: 40px;
     font-size: 24px;
@@ -194,7 +205,7 @@ a {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .hero_container {
     margin-top: 0;
   }
@@ -312,7 +323,7 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero {
     height: 500px;
   }
@@ -356,6 +367,7 @@ a {
 .img {
   width: 150px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .list-item {
@@ -365,6 +377,7 @@ a {
   font-style: normal;
   font-weight: 400;
   text-shadow: 5px 5px 20px #444545, 5px 5px 20px rgb(233, 190, 121);
+  margin-bottom: 20px;
 }
 
 .link {
@@ -409,7 +422,7 @@ a {
   background-color: rgb(135, 112, 74);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .models {
     width: 200px;
     padding: 30px 20px 20px 20px;
@@ -419,7 +432,7 @@ a {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .models {
     margin: 0;
   }
@@ -487,7 +500,7 @@ a {
   box-shadow: 0px 15px 30px #fff;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .contacts {
     padding: 20px 20px 20px 20px;
   }
@@ -565,7 +578,7 @@ a {
     margin: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .contacts_city {
     width: 230px;
   }
@@ -651,7 +664,7 @@ a {
   transform: scale(1.3);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .footer {
     padding-top: 20px;
     padding-left: 20px;
@@ -711,7 +724,7 @@ a {
     margin-bottom: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .footer_container {
     width: 1200px;
   }
@@ -827,7 +840,7 @@ a {
   border: solid #ffffff;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .modal {
     width: 320px;
   }
@@ -989,7 +1002,7 @@ a {
   box-shadow: 0px 15px 30px #fff;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .products_card {
     border-radius: 30px 30px 0 0;
   }
@@ -1067,7 +1080,7 @@ a {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .product_item {
     display: flex;
     flex-wrap: wrap;
@@ -1096,7 +1109,7 @@ a {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .product_item {
     display: flex;
     flex-wrap: wrap;

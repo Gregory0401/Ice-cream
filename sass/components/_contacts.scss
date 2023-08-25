@@ -22,7 +22,7 @@
   transform: translateY(-10px);
   box-shadow: 0px 15px 30px #fff;
 }
-@include mobile {
+@media screen and (min-width: 480px) {
   .contacts {
     padding: 20px 20px 20px 20px;
   }
@@ -74,7 +74,7 @@
   background-image: url("../img/sofia.jpeg");
   background-size: cover;
 }
-@include tablet {
+@media screen and (min-width: 768px) {
   .contacts_item {
     display: flex;
     gap: 20px;
@@ -92,7 +92,7 @@
     margin: auto;
   }
 }
-@include desktop {
+@media screen and (min-width: 1280px) {
   .contacts_item {
     // width: 1200px;
   }
