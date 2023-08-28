@@ -18,7 +18,8 @@
   font-weight: 400;
   font-size: 20px;
 }
-.contacts_city:hover {
+.contacts_city:hover,
+:focus {
   transform: translateY(-10px);
   box-shadow: 0px 15px 30px #fff;
 }

@@ -37,7 +37,8 @@
   text-shadow: 4px 4px 4px #3e3ee6;
 }
 
-.btn_buy:hover {
+.btn_buy:hover,
+:focus {
   background-color: #3e3ee6;
   border: 2px solid #fff;
   color: #fff;
@@ -45,7 +46,8 @@
 .header_item:hover.btn_buy {
   background-color: brown;
 }
-.header_item:hover {
+.header_item:hover,
+:focus {
   color: #fff;
 }
 .header_logo {

@@ -48,7 +48,8 @@
   cursor: pointer;
   margin-bottom: 25px;
 }
-.clear_cart:hover {
+.clear_cart:hover,
+:focus {
   color: #ffffff;
   border: solid #ffffff;
 }
@@ -67,7 +68,8 @@
   margin-right: auto;
   cursor: pointer;
 }
-.btn_total:hover {
+.btn_total:hover,
+:focus {
   color: #ffffff;
 }
 .cart_buttons {
@@ -102,7 +104,8 @@
     right: 5px;
     cursor: pointer;
   }
-  .btn_close:hover {
+  .btn_close:hover,
+  :focus {
     color: #ffffff;
   }
   .modal_label {
@@ -130,7 +133,7 @@
     margin-right: auto;
     cursor: pointer;
   }
-  .buy_now:hover {
+  .buy_now:hover, :focus {
     color: #ffffff;
     border: solid #ffffff;
   }
